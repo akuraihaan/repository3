@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background: rgb(22, 230, 53);
+            width: 100px; height: 200px;
+            display: none;
+        }
+
+        .box2{
+            background: rgba(218, 36, 15, 0.829);
+            width: 100px; height: 200px;
+            display: none;
+        }
+    </style>
+
+    <script>
+        function tampilkanBox1() {
+            document.querySelector('.box1').style.display = "block";
+            document.querySelector('.box2').style.display = "none";
+        }
+
+        function tampilkanBox2() {
+            document.querySelector('.box2').style.display = "block";
+            document.querySelector('.box1').style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="tampilkanBox1()">Jawaban Benar</h1>
+    <h2 onclick="tampilkanBox2()">Jawaban Salah</h2>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

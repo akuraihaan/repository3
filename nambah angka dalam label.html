@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<style>
+
+</style>
+</head>
+</body>
+<label>Angka 1</label><input id="angka1" type="text">
+<br>
+<label>Angka 2</label><input id="angka2" type="text">
+</br>
+<button onclick="hitung()">Submit</button>
+<script>
+    function hitung(){
+        let angka1 = parseInt(document.querySelector("#angka1").value);
+        let angka2 = parseInt(document.querySelector("#angka2").value);
+        alert("hasil jumlah angka 1 dan 2 adalah"+(angka1+angka2))
+    }
+</script>
+</body>
+</head>
+</html>
